@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
         flash[:danger] = "Please log in."
         redirect_to login_url
     def hello
-        render html: "Welcome , People!"
+        render html: "hello , world!"
 
           end
         end
