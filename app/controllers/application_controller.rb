@@ -10,10 +10,7 @@ class ApplicationController < ActionController::Base
         store_location
         flash[:danger] = "Please log in."
         redirect_to login_url
-    def hello
-        render html: "hello , world!"
-
-          end
+  
         end
       end
     end
