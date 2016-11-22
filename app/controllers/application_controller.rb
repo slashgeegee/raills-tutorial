@@ -5,6 +5,11 @@ class ApplicationController < ActionController::Base
   private
 
     # Confirms a logged-in user.
+    def hello
+      render html: "hello, world!"
+    end
+
+    end
     def logged_in_user
       unless logged_in?
         store_location

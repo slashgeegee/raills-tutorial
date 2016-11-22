@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root   'static_pages#home'
+  root   'application#hello'
 
   get    '/help',    to: 'static_pages#help'
   get    '/about',   to: 'static_pages#about'
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :users do
     member do
       get :following, :followers
-     
+
     end
   end
   resources :account_activations, only: [:edit]
