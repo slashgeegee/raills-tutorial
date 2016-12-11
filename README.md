@@ -1,2 +1,1 @@
-# rails_tuorial
-rails tutorial repos
+#Michael Hart's Rails Tutorial
